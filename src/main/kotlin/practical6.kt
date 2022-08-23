@@ -12,8 +12,13 @@ fun main(){
     }
 
     fun sub(vararg x:Int){
-        var sub:Int = 0
+        var sub:Int = x[0]
+        var flag = 0
         for(i in x){
+            if (flag == 0){
+                flag = 1
+                continue
+            }
             sub -= i
         }
         var y:String = ""
