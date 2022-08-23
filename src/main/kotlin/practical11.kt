@@ -1,6 +1,3 @@
-import java.util.Arrays
-
-
 class Matrix(arrs: Array<IntArray>, noOfRow: Int, noOfCol: Int) {
     var r:Int = noOfRow
     var c:Int = noOfCol

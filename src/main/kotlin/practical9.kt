@@ -6,7 +6,6 @@ fun main() {
         val temp: Int = readLine()!!.toInt()
         a.add(temp)
     }
-
     println("Max number from array is ${maxNum(a)}")
 }
 
