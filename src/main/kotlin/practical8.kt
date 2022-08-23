@@ -4,24 +4,20 @@ fun main() {
     printArray(arr1)
     println()
 
-
     val arr2: Array<Int> = arrayOf(1, 2, 3, 4, 5)
     println("Created array using Array<> method")
     printArray(arr2)
     println()
-
 
     println("Created array using Array<> method and lambda function")
     val arr3 = Array(5) { i: Int -> i }
     printArray(arr3)
     println()
 
-
     println("Created array using IntArray<> method")
     val arr4 = IntArray(5)
     printArray(arr4.toTypedArray())
     println()
-
 
     println("Created array using intArrayOf() method")
     val arr5 = intArrayOf(12, 10, 1, 5, 18, 19)
@@ -32,7 +28,6 @@ fun main() {
     val arr6 = arrayOf(intArrayOf(1, 2), intArrayOf(3, 4), intArrayOf(5, 6))
     printArray(arr6)
     println()
-
 
     println("Enter numbers for array")
     val a = ArrayList<Int>()
@@ -66,7 +61,6 @@ fun printArray(arr: Array<Int>) {
     }
 }
 
-
 fun printArray(arr: Array<IntArray>) {
     for (row in arr) {
         print(row.contentToString())
@@ -74,7 +68,6 @@ fun printArray(arr: Array<IntArray>) {
 }
 
 fun sortArray(arr: ArrayList<Int>): ArrayList<Int> {
-
     var i: Int
     var tmp: Int
     for (i in 0 until arr.size) {
@@ -84,9 +77,7 @@ fun sortArray(arr: ArrayList<Int>): ArrayList<Int> {
                 arr[i] = arr[j]
                 arr[j] = tmp
             }
-
         }
     }
-
     return arr
 }

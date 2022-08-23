@@ -3,7 +3,6 @@ open class Product(name: String,quantity: Int){
     init {
         println("Product name :$name")
         println("Quantity: $quantity")
-
     }
     constructor(name: String,quantity: Int,p: Int) : this(name,quantity){
         this.p=p
@@ -15,14 +14,12 @@ class Laptop(name: String,quantity: Int,price : Int,cpu_n:String,RAM_s:String):P
     init{
         println("CPU name:$cpu_n")
         println("RAM_Size:$RAM_s")
-
     }
     constructor(name: String,quantity:Int,price: Int,cpu_n: String,RAM_s: String,hdd:String):this(name,quantity,price,cpu_n,RAM_s){
         this.hdd=hdd
         println("HDD_Size:$hdd")
         println("---------------")
     }
-
 }
 
 fun main(){

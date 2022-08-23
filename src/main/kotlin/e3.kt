@@ -20,7 +20,6 @@ class Student(firstname:String,lastname:String,age: Int,eno:Long,branch:String,C
         println("Batch $batch")
         println("--------------")
     }
-
 }
 fun main(){
     var s1=Student("Sumit","Nandola",19,20012021015,"IT","C","AB9")
@@ -28,5 +27,4 @@ fun main(){
     var s3=Student("Yash","Patel",21,20012021042,"IT","C","AB9")
     var s4=Student("Harsh","Maniya",19,20012011059,"CE","C","AB7")
     var s5=Student("Hari","Patel",20,20012021063,"IT","A","AB1")
-
 }

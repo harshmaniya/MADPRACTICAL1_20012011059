@@ -1,5 +1,4 @@
 fun main() {
-
     println("With using third variable:")
     var a = 10
     var b = 20
